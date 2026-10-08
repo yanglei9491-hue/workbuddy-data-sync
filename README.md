@@ -36,6 +36,21 @@ WorkBuddy 多账号**共用同一个数据库** `~/.workbuddy/workbuddy.db`，�
 
 ---
 
+## 安装到 WorkBuddy
+
+把本技能放进 WorkBuddy 的技能目录即可：
+
+```bash
+git clone https://github.com/yanglei9491-hue/workbuddy-data-sync.git \
+  ~/.workbuddy/skills/08-business/workbuddy-data-sync
+```
+
+Windows 下即 `C:\Users\<你的用户名>\.workbuddy\skills\08-business\workbuddy-data-sync`。
+
+放好后重启 WorkBuddy，在聊天里触发即可（触发词见下）。
+
+---
+
 ## 快速开始（推荐：聊天内触发）
 
 在 WorkBuddy 聊天窗口直接说：
@@ -252,7 +267,7 @@ python -c "import sqlite3,os;print(*{r[0] for r in sqlite3.connect('file:'+os.pa
 ## 文件结构
 
 ```
-workbuddy数据同步/
+workbuddy-data-sync/
 ├── SKILL.md                      技能入口（AI 读这个）
 ├── README.md                     本文件
 ├── CHANGELOG.md                  版本更新日志（Keep a Changelog 风格）
